@@ -7800,6 +7800,23 @@ iframe {
   .sales-column {
     width: 100px;
   }
+  .add-to-cart {
+    width: 70px;
+  }
+
+
+  .addToCartButton{
+    background-color:#AB8DF7;
+    width :50px;
+    height: 50PX;
+    border-radius: 10px;
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
 .product-info {
     display: flex;
     justify-content: space-between; /* Space out the sections */
