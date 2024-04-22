@@ -80,8 +80,24 @@ function showProductDetails(detailsId) {
     console.error("Details container not found for ID:", detailsId);
   }
 }
+//PRODUCTS ADD TO CART BUTTON
 
+const buttons = document.querySelectorAll('.addToCartButton');
 
+// Iterate over each button
+buttons.forEach(button => {
+  let isToggled = false;
+
+  // Add click event listener to each button
+  button.addEventListener('click', () => {
+    if (isToggled) {
+      button.textContent = '+';
+    } else {
+      button.textContent = '-';
+    }
+    isToggled = !isToggled;
+  });
+});
 
 
 //SEARCH BAR
